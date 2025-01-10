@@ -1,0 +1,66 @@
+/* Dropdown menu container */
+.dropdown-menu-wide {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  /* Dark background */
+  color: white;
+  /* White text */
+  padding: 15px;
+  /* Add padding */
+  border-radius: 5px;
+  /* Rounded corners */
+  min-width: 600px;
+  /* Minimum width */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /* Shadow for dropdown */
+  z-index: 1000;
+  /* Ensure it's above other elements */
+  position: absolute;
+  /* Positioning relative to parent */
+}
+
+/* Row inside dropdown menu */
+.dropdown-menu-wide .row {
+  width: 100%;
+  margin: 0;
+}
+
+/* Each column inside the dropdown */
+.dropdown-menu-wide .col-4 {
+  padding: 5px;
+}
+
+/* Dropdown items */
+.dropdown-menu-wide .dropdown-item {
+  color: white;
+  font-size: 16px;
+  padding: 8px 10px;
+  text-align: left;
+  text-decoration: none;
+  /* Remove underline */
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu-wide .dropdown-item:hover {
+  background-color: #444;
+  /* Darker hover effect */
+  color: white;
+}
+
+/* Button for Genres dropdown */
+.btn-secondary.dropdown-toggle {
+  background-color: transparent;
+  /* Transparent background */
+  border: none;
+  /* No border */
+  color: white;
+  font-size: 16px;
+}
+
+.btn-secondary.dropdown-toggle:focus {
+  box-shadow: none;
+  /* Remove focus outline */
+}

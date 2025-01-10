@@ -1,0 +1,140 @@
+/* Custom styles for the genres dropdown */
+.genres-dropdown {
+    position: relative;
+}
+
+/* Show dropdown menu with proper styling */
+.genres-dropdown .dropdown-menu.show {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    /* Matches the dropdown background */
+    color: white;
+    /* Text color */
+    border: none;
+    min-width: 600px;
+    /* Adjusted to ensure a wide dropdown */
+    max-width: 600px;
+    /* Ensures consistent width */
+    padding: 10px;
+    z-index: 1050;
+    /* Ensures dropdown stays above other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    /* Reduced shadow for a clean look */
+    border-radius: 5px;
+    /* Smooth edges */
+    margin: 0;
+    /* Remove extra margins */
+}
+
+/* Ensure dropdown maintains a 3-column layout */
+.genres-dropdown .row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    /* Ensure children align properly */
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Add spacing between items */
+    justify-content: space-between;
+    /* Distribute items evenly */
+}
+
+/* Dropdown items styling */
+.genres-dropdown .dropdown-item {
+    color: white;
+    /* Text color */
+    font-size: 14px;
+    /* Font size for dropdown items */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+    /* Pointer cursor for clarity */
+    border-radius: 3px;
+    /* Slightly rounded corners */
+}
+
+.genres-dropdown .dropdown-item:hover {
+    background-color: #444;
+    /* Highlight color on hover */
+}
+
+/* Divider styling */
+.genres-dropdown .dropdown-divider {
+    background-color: #666;
+    /* Divider color */
+    margin: 5px 0;
+}
+
+/* Three-column layout for dropdown items */
+.genres-dropdown .col-4 {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Three equal columns with spacing */
+    box-sizing: border-box;
+    padding: 5px;
+    /* Adjust column spacing for dropdown items */
+}
+
+/* Default hidden state */
+.genres-dropdown-menu {
+    display: none;
+    /* Dropdown hidden by default */
+}
+
+.genres-dropdown .dropdown-menu {
+    display: none;
+    /* Ensure it's hidden initially */
+}
+
+/* Show dropdown when active */
+.genres-dropdown-menu.open {
+    display: flex;
+    /* Use flex for layout */
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 600px;
+    /* Ensure proper width */
+    z-index: 1000;
+}
+
+/* Fix black shadow or gap issue */
+.navbar {
+    position: relative;
+    /* Ensure navbar is above dropdown */
+    z-index: 1050;
+    background-color: #343a40;
+    /* Ensure consistent navbar background */
+    box-shadow: none;
+    /* Remove additional shadows */
+}
+
+/* Ensure the body has consistent background */
+body {
+    background-color: #f8f9fa;
+    /* Match with your website's overall theme */
+    margin: 0;
+    /* Remove gaps */
+}
+
+/* Add smooth transitions for dropdown open/close */
+.genres-dropdown .dropdown-menu.show {
+    animation: dropdownFadeIn 0.3s ease-in-out;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
