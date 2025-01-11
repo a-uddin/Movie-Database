@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { FaPlayCircle } from "react-icons/fa";
 import MovieCard from "../components/MovieCard";
+import API_URL from '../config';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -22,7 +23,7 @@ const Home = () => {
     const fetchMovies = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5000/api/movies");
+        const response = await axios.get("${API_URL}/movies");
         setMovies(response.data);
         setFilteredMovies(response.data);
       } catch (err) {
