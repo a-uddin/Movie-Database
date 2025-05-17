@@ -1,6 +1,6 @@
 <h2>🎬 Movie Database (MovieDB)</h2>
 
-<p><strong>Technologies:</strong> React, Node.js, MongoDB, Express, Bootstrap, Axios</p>
+<p><strong>Technologies:</strong> React, Node.js, MongoDB, Express, Bootstrap, Axios.</p>
 
 <h3>📌 Project Overview</h3>
 <ul>
